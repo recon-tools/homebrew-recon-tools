@@ -3,5 +3,5 @@
 Homebrew repository for installing tools such as `domain-recon`, `cert-ripper`, etc.
 
 ```bash
-brew tap recon-tools/homebrew-domain-recon
+brew tap recon-tools/homebrew-recon-tools
 ```
