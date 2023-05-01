@@ -5,17 +5,17 @@ class CertRipperGo < Formula
   version "0.1.0"
 
   if Hardware::CPU.intel?
-    url "https://github.com/recon-tools/cert-ripper-go/releases/download/v0.1.0/cert-ripper-v0.1.0-darwin-amd64.tar.gz"
-    sha256 "3f8433ab9bbfc638a87e6699f3b92f676ac9cf408590f991abd1afe7f4adbe71"
+    url "https://github.com/recon-tools/cert-ripper-go/releases/download/v0.3.0/cert-ripper-0.3.0-darwin-amd64.tar.gz"
+    sha256 "3ba0bcb74fd86208129a909477a1a3f05b5157c0c275c2e68751811d0fdcd42f"
   elsif Hardware::CPU.arm?
-    url "https://github.com/recon-tools/cert-ripper-go/releases/download/v0.1.0/cert-ripper-v0.1.0-darwin-arm64.tar.gz"
-    sha256 "7ad3cf4ef1f8d8d9c215c3a1b696f83580124861e2a00c5d2d77f2b72e286d6e"
+    url "https://github.com/recon-tools/cert-ripper-go/releases/download/v0.3.0/cert-ripper-0.3.0-darwin-arm64.tar.gz"
+    sha256 "93ae897f6de86f5ec35442287830e92a928174885a6606a2a8da377a0612c201"
   else
     odie "Unsupported architecture"
   end
 
   def install
-    bin.install "cert-ripper"
+    bin.install "bin/cert-ripper"
   end
 
   test do
