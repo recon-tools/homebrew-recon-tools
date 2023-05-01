@@ -2,7 +2,7 @@ class CertRipperGo < Formula
   desc "Print, extract and validate TLS certificate chains for domains and URLs"
   homepage "https://github.com/recon-tools/cert-ripper-go"
   license "MIT"
-  version "0.1.0"
+  version "0.3.0"
 
   if Hardware::CPU.intel?
     url "https://github.com/recon-tools/cert-ripper-go/releases/download/v0.3.0/cert-ripper-0.3.0-darwin-amd64.tar.gz"
