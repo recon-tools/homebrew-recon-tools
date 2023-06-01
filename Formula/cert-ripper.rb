@@ -5,21 +5,21 @@
 class CertRipper < Formula
   desc "Print, extract and validate TLS certificate chains for domains and URLs."
   homepage "https://github.com/recon-tools/cert-ripper-go"
-  version "0.5.7"
+  version "0.6.0"
   license "MIT"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/recon-tools/cert-ripper-go/releases/download/v0.5.7/cert-ripper-0.5.7-darwin-arm64.tar.gz"
-      sha256 "d6125a04285ed790aa6747e09ea858a5c24269873d43be727977947ded99aeb7"
+    if Hardware::CPU.intel?
+      url "https://github.com/recon-tools/cert-ripper-go/releases/download/v0.6.0/cert-ripper-0.6.0-darwin-amd64.tar.gz"
+      sha256 "b93fd2054ca1a54ab76587b074eecda3c819f5785ede7d1a37d68fcb0f8cc8bf"
 
       def install
         bin.install "bin/cert-ripper"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/recon-tools/cert-ripper-go/releases/download/v0.5.7/cert-ripper-0.5.7-darwin-amd64.tar.gz"
-      sha256 "8668fb23a4d62c1e63c76e922d338ed9d9eb33ff9f2e3798b37dcfc029bc6aac"
+    if Hardware::CPU.arm?
+      url "https://github.com/recon-tools/cert-ripper-go/releases/download/v0.6.0/cert-ripper-0.6.0-darwin-arm64.tar.gz"
+      sha256 "793a85709eb77c7fa1722760e13ff0c48bec37f7102515de08675a9c827c68a6"
 
       def install
         bin.install "bin/cert-ripper"
@@ -29,24 +29,24 @@ class CertRipper < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/recon-tools/cert-ripper-go/releases/download/v0.5.7/cert-ripper-0.5.7-linux-amd64.tar.gz"
-      sha256 "9f9753c64c0682c261d2152ece474d9b5d9eaa1d0451ef2fca28855004f43c46"
+      url "https://github.com/recon-tools/cert-ripper-go/releases/download/v0.6.0/cert-ripper-0.6.0-linux-amd64.tar.gz"
+      sha256 "897db2692fed3d84042fc139306bc8e705113c324064ca59545542bb81b003a1"
 
       def install
         bin.install "bin/cert-ripper"
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/recon-tools/cert-ripper-go/releases/download/v0.5.7/cert-ripper-0.5.7-linux-armv6.tar.gz"
-      sha256 "4f74d88b96d5c26b46c61a6502575681521e4c9802e3f9e53acb63f7278b65c4"
+      url "https://github.com/recon-tools/cert-ripper-go/releases/download/v0.6.0/cert-ripper-0.6.0-linux-armv6.tar.gz"
+      sha256 "843b854f8e675aecb1d378d2945f0574f952adcee4a3a089858d299367c0e06e"
 
       def install
         bin.install "bin/cert-ripper"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/recon-tools/cert-ripper-go/releases/download/v0.5.7/cert-ripper-0.5.7-linux-arm64.tar.gz"
-      sha256 "7f5aa327993c80d8ae01bb085c2bf6848ceba0661c2b8718cff88af1e8ce5b95"
+      url "https://github.com/recon-tools/cert-ripper-go/releases/download/v0.6.0/cert-ripper-0.6.0-linux-arm64.tar.gz"
+      sha256 "076e553aa2684e98d6ae76a7dcdab008acf2edc998e05a0553ca2c2149f450de"
 
       def install
         bin.install "bin/cert-ripper"
