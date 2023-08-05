@@ -1,10 +1,10 @@
 class DomainReconRs < Formula
   desc "Discover domain names based on SSL certificates."
   homepage "https://github.com/recon-tools/domain-recon-rs"
-  url "https://github.com/recon-tools/domain-recon-rs/releases/download/v1.3.0/domain-recon-v1.3.0.apple-darwin.tar.gz"
-  sha256 "e055d921bc4d658c208b684dc05de670f3f482ed3bab8c7775c15c81d6a87312"
+  url "https://github.com/recon-tools/domain-recon-rs/releases/download/v1.3.1/domain-recon-v1.3.1.apple-darwin.tar.gz"
+  sha256 "bd3cc90294ce7ebf1b456c0cd62144ea25fc1b6cbdba5db7458c493c0e4b2547"
   license "MIT"
-  version "1.3.0"
+  version "1.3.1"
 
   def install
     bin.install "domain-recon"
